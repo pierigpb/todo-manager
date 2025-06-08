@@ -41,3 +41,10 @@ def marcar_concluida(tarefas):
             print("Número inválido.")
     except ValueError:
         print("Entrada inválida.")
+
+
+def remover_tarefa(tarefas, indice):
+    """Remove a tarefa da lista com base no índice."""
+    if 0 <= indice < len(tarefas):
+        del tarefas[indice]
+        salvar_tarefas(tarefas)       
